@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar Code Stars-->
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            Level Up
+        </div>
+        <div class="nav-items">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="loginpage.html">Login/Sign Up</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+
+
+    <!-- Navigation Bar Code Ends -->
+
+    <div class="contactUs">
+        <div class="title">
+            <h2>Get in Touch</h2>
+
+        </div>
+        <div class="box">
+            <!-- Form-->
+
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="John">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email Address</span>
+                                <input type="text" placeholder="john@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile Number</span>
+                                <input type="text" placeholder="+449346404356">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="write your message here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info Box-->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Brunel University London</p>
+                    </div>
+
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:loremipsum@gmail.com">loremipsum@gmail.com</a>
+                    </div>
+
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+44888983203">+44 888983203</a>
+                    </div>
+
+                    <!-- Social Media Links-->
+                    <ul class="sci">
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Map-->
+
+            <div class="contact map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.968428531745!2d-0.47274929999999993!3d51.5321389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766e0a6fcc751f%3A0x43eae5c365df7a7a!2sBrunel%20University%20London!5e0!3m2!1sen!2suk!4v1644008612302!5m2!1sen!2suk"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Footer Code Starts -->
+
+    <!--Footer Code Starts-->
+    <footer class="footer">
+        <div class="myfootercontainer">
+            <div class="row">
+                <div class="footer-column">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="termsAndConditions.html">Term & Condition</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="Company Policy.html">Company Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="loginpage.html">Sign Up</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Forum</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Level Up </h4>
+                    <ul>
+                        <li><a href="quiz.html">Quizzes</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Learn English Spelling</a></li>
+                        <li><a href="#">Learn English Grammer</a></li>
+                        <li><a href="#">Learn English Vocabulary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer Code Ends -->
+</body>
+
+</html>

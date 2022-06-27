@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Level Up
+    </title>
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Company Policy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+
+<body>
+    <!-- Navigation Bar Code Stars-->
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            Level Up
+        </div>
+        <div class="nav-items">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="loginpage.html">Login/Sign Up</a></li>
+        </div>
+        <a class="nav navbar-nav naavbar-right">
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+    </nav>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+
+
+    <!-- Navigation Bar Code Ends -->
+
+
+    <!-- Company Policy Page Content Starts -->
+
+    <div class="CompanyPolicy-section">
+        <h1>Company Policy </h1>
+        <br>
+        <h2>What are Company Policies?</h2>
+        <p>Company policies are guidelines that help employers deal with the health, safety and accountability of employees.</p>
+        <p>as well as their interactions with customers or clients.</p>
+    </div>
+
+    <h2 style="text-align:center">All Company Policies</h2>
+    <div class="column">
+        <h2 style="text-align:center">Workplace Health and Safety</h2>
+        <p style="text-align:center">A workplace safety policy is now essential within all companies large and small. If the workplace is not safe, in this day and age you will most likely taken to court for it.Therefore,it is intrinsic that there is a policy firm inplace to protect
+            not just employee but the company.</p>
+    </div>
+
+    <div class="column">
+        <h2 style="text-align:center">Leave of Absence Policy</h2>
+        <p style="Text-align:center">There may be all sorts of reasons an employee may need to be absent from work such as annual leave or longstanding leave. However for each reason there is different treament and there will be written in place rules to prevent ambiguity for each
+            employee.
+        </p>
+    </div>
+    <div class="column">
+        <h2 style="text-align:center">Employee Disciplinary Policy</h2>
+        <p style="text-align:center">Problems that may arise within the workplace that will require Disciplinary action. By having a clear policy written down showing a step by step procedure, it makes it easier to follow and ensures fair treatment to all.</p>
+        <p>.</p>
+    </div>
+    <h2 style="text-align:center">Equal opportunity policy</h2>
+    <p style="Text-align:center">There may be all sorts of reasons an employee may need to be absent from work such as annual leave or longstanding leave. However for each reason there is different treament and there will be written in place rules to prevent ambiguity for each employee.</p>
+
+    <h2 style="text-align:center">Employee Face Mask Policies</h2>
+    <p style="Text-align:center">Wearing a face mask has been a part of daily routine for many people now.To keep businesses open Wearing masks where manditory would be best for everyone to reduce the spread of the rapid evolving COVID-19.</p>
+
+
+    <!-- Company Policy Content Page Ends -->
+
+    <!--Footer Code Starts-->
+    <footer class="footer">
+        <div class="myfootercontainer">
+            <div class="row">
+                <div class="footer-column">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="termsAndConditions.html">Term & Condition</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="Company Policy.html">Company Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="loginpage.html">Sign Up</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Forum</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Level Up </h4>
+                    <ul>
+                        <li><a href="quiz.html">Quizzes</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Learn English Spelling</a></li>
+                        <li><a href="#">Learn English Grammer</a></li>
+                        <li><a href="#">Learn English Vocabulary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

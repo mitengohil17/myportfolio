@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Login </title>
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginpage.css">
+    <script type="text/javascript" src="navigation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+
+
+<!-- Navigation Code Starts -->
+
+<body>
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            Level Up
+        </div>
+        <div class="nav-items">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contactpage.html">Contact</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="loginpage.html">Login/Sign Up</a></li>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+
+    </div>
+
+    <!-- Navigation Code Ends -->
+
+
+
+    <!-- Login Page Content Starts-->
+
+    <div class="myclass">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+
+            </div>
+
+
+            <form id="sign-in" class="input-fields">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="text" class="input-field" placeholder="Enter Username" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="my-check-box"><span>Remember me </span>
+                <button type="submit" class="log-in-button"> Sign In</button>
+            </form>
+
+            <form id="signup" class="input-fields">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="email" class="input-field" placeholder="Enter Email Address" required>
+                <input type="text" class="input-field" placeholder="Enter Strong Password" required>
+                <input type="checkbox" class="my-check-box"><span>I agree to the terms & conditions </span>
+                <button type="submit" class="log-in-button"> Sign Up</button>
+            </form>
+        </div>
+
+
+        <script>
+            var x = document.getElementById("sign-in")
+            var y = document.getElementById("signup")
+            var z = document.getElementById("btn")
+
+
+            function signup() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+
+            function signin() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+
+                z.style.left = "0";
+            }
+        </script>
+
+
+    </div>
+
+
+    <!-- Login Page Content Ends-->
+
+
+
+    <!--Footer Code Starts-->
+    <footer class="footer">
+        <div class="mycontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="termsAndConditions.html">Term & Condition</a></li>
+                        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="Company Policy.html">Company Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="loginpage.html">Sign Up</a></li>
+                        <li><a href="contactpage.html">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Level Up</h4>
+                    <ul>
+                        <li><a href="quiz.html">Quizzes</a></li>
+                        <li><a href="#">Online Courses</a></li>
+                        <li><a href="#">Learn English Spelling</a></li>
+                        <li><a href="#">Learn English Grammer</a></li>
+                        <li><a href="#">Learn English Vocabulary</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer Code Ends -->
+
+</body>
+
+</html>
